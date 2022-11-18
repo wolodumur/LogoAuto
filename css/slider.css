@@ -1,0 +1,53 @@
+/* Слайдер */
+.slick-track{
+	display: flex;
+	justify-content: space-between;
+}
+.slider{
+	position: relative;
+	overflow: hidden;
+	padding: 15px 0;
+}
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 50px;
+}
+.slider .slick-arrow.slick-prev{
+	left: 0;
+	background: url('../img/sliderarrow-l.svg') 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+	right: 0;
+	background: url('../img/sliderarrow-r.svg') 0 0 / 100% no-repeat;
+}
+/* не кликабельная стрелка не активная */
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+/* стилизация точек */
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0 10px;
+}
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(105, 90, 90);
+	border-radius:50%;
+}
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #fff;
+}

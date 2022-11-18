@@ -1,0 +1,170 @@
+@media (max-width:930px){
+	.title__wrap{
+		display: block;
+	}
+	.step__item{
+		margin-bottom: 40px;
+	}
+}
+
+
+@media (max-width:767px){
+	body.lock{
+		overflow: hidden;
+	}
+	.header::before{
+		z-index: 3;	
+	}
+
+	.header__body{
+		height: 56px;
+	}
+	.header__logo{
+		padding-left: 18px;
+	}
+	.header__burger{
+		display: block;
+		position: relative;
+		z-index: 3;
+		margin: 0 16px 0 0;
+	}
+	.header.active2{
+		background-color: var(--color1);
+	}
+	.header__burger.active span:nth-child(1) {
+		display: none;
+	}
+	.header__burger.active span:nth-child(2) {
+		transform: rotate(45deg);
+	}
+	.header__burger.active span:nth-child(3) {
+		transform: rotate(-45deg);
+	}
+	.header__burger.active span:nth-child(4) {
+		display: none;
+	}
+	.header__menu.active{
+		top: 0;
+	}
+	.header__menu{
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 70px 0 0 0;
+		background-color: #fff;
+		transition: all .4s ease 0s;
+		overflow: auto;
+	}
+	.header__list{
+		display: block;
+		padding: 50px 0px 0px 16px;
+	}
+	.header__list li{
+		margin: 0px 0px 30px 0px;
+	}
+	.header__list a{
+		font-size: 20px;
+		line-height: 27px;
+	}
+	.register__panel {
+		display: flex;
+		margin-left: 0;
+		padding-top: 40px;
+	}
+	.login {
+		margin: 0 30px;
+		order: 2;
+	}
+	.btn__login {
+		font-weight: 600;
+		font-size: 16px;
+		color: var(--color1);	
+	}
+	.register {
+		display: block;
+		background-color: var(--color1);
+		padding: 9px 23px;
+		border-radius: 5px;
+		order: 1;
+	}
+	.btn__register {
+		font-weight: 600;
+		font-size: 16px;
+		color: white;
+	}
+	.title__wrap{
+		display: block;
+	}
+	.info{
+		margin: 0 16px;
+		font-size: 34.8936px;
+		line-height: 42px;
+	}
+	.info h1{
+		font-size: 34.8936px;
+		line-height: 42px;
+	}
+	.info__foto{
+		margin-top: 50px;
+		width: 100%;
+	}
+	.about__foto{
+		display: none;
+	}
+	.slider .item{
+		margin: 15px;
+	}
+	h3{
+		margin-left: 16px;
+	}
+	.about__text{
+		padding: 55px 16px 0 16px;
+	}
+	.about__info {
+		width: 100%;
+		padding-bottom: 54px;
+	}
+	.footer__body{
+		display: block;
+	}
+	.footer__list{
+		display: block;
+		margin-top: 20px;
+	}
+	.footer__list li{
+		margin-bottom: 20px;
+		margin-left: 16px;
+	}
+	.footer__list a{
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 19px;
+	}
+	.footer{
+		height: 313px;
+	}
+}
+
+
+@media (max-width:600px){
+	.steps{
+		display: block;
+		text-align: center;
+	}
+	.step__item{
+		width: 100%;
+		margin: 70px auto 0;
+	}
+	.arrow-works{
+		transform: rotate(90deg);
+	}
+	.circles{
+		margin: 40px auto 0px;
+	}
+	.about{
+		display: block;
+	}
+}
+
